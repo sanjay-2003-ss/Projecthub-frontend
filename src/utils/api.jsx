@@ -2,7 +2,7 @@ import axios from 'axios';
 import { auth } from './firebase';
 
 const api = axios.create({
-  baseURL: 'https://projecthub-backend.vercel.app/api',
+  baseURL: 'http://localhost:3000/api',
   timeout: 10000,
 });
 
