@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import {
-  FaHome,FaPlus,FaHeart,FaBookmark,FaChartBar,FaBars,FaTimes,FaUser,
+  FaHome, FaPlus, FaHeart, FaBookmark, FaChartBar, FaBars, FaTimes, FaUser,
 } from "react-icons/fa";
 
 const Navbar = ({ user }) => {
@@ -50,14 +50,15 @@ const Navbar = ({ user }) => {
     <nav className="backdrop-blur-lg bg-white/70 dark:bg-gray-900/50 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-md">
+        <Link to="/" className="flex items-center gap-2 group">
+          <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-all duration-300">
             <span className="text-white font-bold text-xl">P</span>
           </div>
-          <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hidden sm:inline">
+          <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hidden sm:inline group-hover:tracking-wide transition-all duration-300">
             ProjectHub
           </span>
         </Link>
+
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-2">
@@ -131,9 +132,8 @@ const Navbar = ({ user }) => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-500 ${
-          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`md:hidden overflow-hidden transition-all duration-500 ${isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="flex flex-col gap-2 py-4 px-2 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border-t border-gray-200 dark:border-gray-700">
           {renderLinks(() => setIsMenuOpen(false))}
