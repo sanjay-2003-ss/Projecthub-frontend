@@ -172,8 +172,6 @@ function App() {
             />
           </Routes>
         </div>
-
-        {/* ✅ Footer added here */}
         <Footer />
       </div>
     </Router>
