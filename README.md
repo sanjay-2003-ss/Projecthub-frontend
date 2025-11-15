@@ -1,16 +1,27 @@
-# React + Vite
+ProjectHub Frontend
+A sleek, responsive front-end web application built with React + Vite, designed to serve as the user interface for the ProjectHub platform.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+link here: https://projecthub-frontend-alpha.vercel.app
+🚀 What it does
 
-Currently, two official plugins are available:
+ProjectHub Frontend is the client-side codebase that connects to the backend (API) of our ProjectHub platform. Users can:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+view and navigate projects, tasks, teams and other entities
+interact with a clean UI built using modern React and Tailwind CSS
+benefit from fast hot-module-replacement during development thanks to Vite
+enjoy a maintainable code structure ready for further features
 
-## React Compiler
+🧰 Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React for building UI components and managing state
+Vite as build tool and dev server for ultra-fast refresh
+Tailwind CSS for styling
+ESLint for code quality and consistency
 
-## Expanding the ESLint configuration
+🎯 Future enhancements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Move to TypeScript for typed safety and larger scale maintainability
+Add global state management (e.g., Redux or Zustand) if project grows complex
+Expand UI: dashboards, analytics, team collaboration features
+Add authentication, role-based access control
+Improve UI/UX: animations, mobile-optimizations, offline support
