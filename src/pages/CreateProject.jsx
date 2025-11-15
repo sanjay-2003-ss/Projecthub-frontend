@@ -41,7 +41,7 @@ function CreateProject() {
         liveLink: formData.liveLink || undefined,
       });
 
-      console.log("✅ Project created:", response.data);
+      console.log("Project created:", response.data);
 
       setFormData({
         title: "",
@@ -53,7 +53,7 @@ function CreateProject() {
 
       navigate("/myproject");
     } catch (error) {
-      console.error("❌ Create project error:", error);
+      console.error("Create project error:", error);
       const message =
         error?.response?.data?.message ||
         error?.response?.data?.error ||
