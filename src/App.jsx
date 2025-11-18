@@ -40,6 +40,7 @@ function App() {
           if (error.response?.status === 404) {
             try {
               const createResponse = await api.post('/users', {
+                uid: firebaseUser.uid,
                 email: firebaseUser.email,
                 displayName: firebaseUser.displayName || firebaseUser.email.split('@')[0],
                 photoURL: firebaseUser.photoURL || null
