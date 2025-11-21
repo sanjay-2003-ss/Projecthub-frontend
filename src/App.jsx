@@ -151,7 +151,7 @@ function App() {
             <Route path="/create" element={user ? <CreateProject /> : <Navigate to="/login" />} />
             <Route path="/projects/:id" element={<ProjectDetail user={user} />} />
             <Route path="/edit/:id" element={user ? <EditProject /> : <Navigate to="/login" />} />
-            <Route path="/myproject" element={user ? <MyProjects user={user} /> : <Navigate to="/login" />} />
+            <Route path="/my-projects" element={user ? <MyProjects user={user} /> : <Navigate to="/login" />} />
             <Route path="/favorites" element={user ? <Favorites user={user} /> : <Navigate to="/login" />} />
             <Route path="/profile" element={user ? <Profile user={user} /> : <Navigate to="/login" />} />
             <Route path="/analytics" element={user ? <Analytics /> : <Navigate to="/login" />} />

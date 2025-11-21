@@ -51,7 +51,7 @@ function CreateProject() {
         liveLink: "",
       });
 
-      navigate("/myproject");
+      navigate("/my-projects");
     } catch (error) {
       console.error("Create project error:", error);
       const message =
