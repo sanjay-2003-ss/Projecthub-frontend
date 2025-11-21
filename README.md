@@ -19,6 +19,18 @@ This repo handles the client side of [ProjectHub](https://github.com/sanjay-2003
 - npm or yarn  
 - A running backend API instance (ensure the endpoints your front-end hits are available)  
 
+✅ Key Features
+
+User registration & login via Firebase Auth.
+CRUD operations for projects (create, read, update, delete).
+Tag input (comma-separated) for projects, parsed into arrays.
+GitHub link + optional live demo link for each project.
+Animation effects using Framer Motion for UI interactions.
+Responsive layout and styling with Tailwind CSS.
+Protected routes: only logged-in users can create/edit/manage their projects.
+
+API error handling and loading states in forms.
+
 ### Setup & Run  
 ```bash
 # 1. Clone this repo
