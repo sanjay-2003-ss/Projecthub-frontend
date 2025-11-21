@@ -1,16 +1,55 @@
-# React + Vite
+# ProjectHub-Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern front-end application for the ProjectHub platform, built using React, Vite and Tailwind CSS.  
+This repo handles the client side of [ProjectHub](https://github.com/sanjay-2003-ss/Projecthub-frontend) where users can create, view, edit and share projects.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** (functional components + hooks)  
+- **Vite** for fast dev build & HMR  
+- **Tailwind CSS** for utility-first styling  
+- **Framer Motion** for smooth animations  
+- **Firebase Auth** for user authentication  
+- Custom API wrapper (`src/utils/api`) to communicate with backend  
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites  
+- Node.js (version 16 +)  
+- npm or yarn  
+- A running backend API instance (ensure the endpoints your front-end hits are available)  
 
-## Expanding the ESLint configuration
+### Setup & Run  
+```bash
+# 1. Clone this repo
+git clone https://github.com/sanjay-2003-ss/Projecthub-frontend.git
+cd Projecthub-frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 2. Install dependencies
+npm install   # or yarn
+
+# 3. Configure environment variables
+# Create a `.env` file in the root (see .env.example) and set:
+# VITE_API_BASE_URL=your_backend_url
+# VITE_FIREBASE_API_KEY=…
+# VITE_FIREBASE_AUTH_DOMAIN=…
+# VITE_FIREBASE_PROJECT_ID=…
+# etc.
+
+# 4. Run in development mode
+npm run dev   # or yarn dev
+
+/
+├── public/           # Static public assets
+├── src/
+│   ├── components/   # Reusable UI components (Navbar, Footer, etc.)
+│   ├── pages/        # Route pages (Home, Login, CreateProject, MyProjects, etc.)
+│   ├── utils/        # Utility modules (api wrapper, firebase config)
+│   ├── App.jsx       # Root app & routing logic
+│   └── main.jsx      # Entry point
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+
+# 5. Build for production
+npm run build
